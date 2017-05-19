@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular JS app</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+
+</head>
+<body ng-app="myApp">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#/home">Home</a></li>
+                    <li><a href="#/authenticated">Authenticated</a></li>
+                    <li><a href="#/authorized">Authorized</a></li>
+                    <li><a href="#/sscallout">SelfServiceCallOut</a></li>
+                    <li><a href="#/login">Login</a></li>
+                    <li><a href="#/logout">Logout</a></li>
+                    <li><a href="SelfServiceCallOut.html">JQuery Call</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content" style="margin-top:40px;">
+        <div class="panel panel-heading">
+            <h1>Angular JS Call For Consuming MSTCloud Self SelfService Call Out</h1>
+        </div>
+        <data-ng-view></data-ng-view>
+        <hr />
+        <footer>
+            <p>Angular JS Call For Consuming MSTCloud Self SelfService Call Out</p>
+        </footer>
+    </div>
+
+    <script src="scripts/jquery-3.1.1.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-route.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>-->
+
+    <script src="scripts/myApp.js"></script>
+</body>
+</html>
